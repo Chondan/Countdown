@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+div#countdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+div#countdown-elements-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+div.box {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Long Cang', cursive;
+}
+div.block {
+    text-align: center;
+    font-weight: bold;
+}
+div#second {
+    color: red;
+    animation: blink infinite 1s;
+}
+div#info-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+div.info {
+    font-size: 30px;
+    font-family: 'Long Cang', cursive;
+}
+input#target-date {
+    text-align: center;
+}
+@keyframes blink {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    color: #000000;
+    font-family: 'Long Cang', cursive;
+    font-size: 25px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    display: inline-block !important;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media screen and (max-width: 400px) {
+    div.info {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 300px) {
+    div.info {
+        font-size: 20px;
+    }
+}

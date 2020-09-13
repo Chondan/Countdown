@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+    <title>Countdown</title>
+</head>
+<body>
+    <div id="countdown">
+        <div id="info-container">
+            <input title="Cannot set date before today or today" type="date" name="target-date" id="target-date">
+            <div class="info">Countdown to New Year</div>
+            <div class="info">Day : Hour : Minute : Second</div>
+        </div>
+        <div id="countdown-elements-container">
+            <div class="box" id="day"></div>
+            <div class="block">:</div>
+            <div class="box" id="hour"></div>
+            <div class="block">:</div>
+            <div class="box" id="minute"></div>
+            <div class="block">:</div>
+            <div class="box" id="second"></div>
+        </div>
+    </div>
+    <script defer src="./index.js"></script>
+</body>
+</html>
