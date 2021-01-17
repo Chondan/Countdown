@@ -78,8 +78,10 @@
         const tomorrow = formatDate(new Date().setDate(new Date().getDate() + 1));
         targetDate.setAttribute("min", tomorrow);
         // set value variable
-        targetDate.value = "2021-01-01";
-        let selectedDate = "2021-01-01";
+        const thisYear = new Date().getFullYear();
+        console.log(thisYear);
+        let selectedDate = `${thisYear + 1}-01-01`;
+        targetDate.value = selectedDate;
         // change value and then random background color
         targetDate.addEventListener('change', function() {
             // random body backgroud-color
